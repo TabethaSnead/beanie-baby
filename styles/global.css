@@ -33,3 +33,26 @@ header .logo {
 main {
     padding: 20px;
 }
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    padding: 10px;
+    /* gap: 10px; */
+}
+.beanie-card {
+    background: white;
+    border: 1px solid lightgrey;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+
+    padding: 10px;
+    text-align: center;
+
+    display: grid;
+    align-content: space-between;
+    justify-items: center;
+}
+.beanie-card img {
+    width: 250px;
+}

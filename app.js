@@ -15,7 +15,7 @@ window.addEventListener('load', async () => {
     // const beanies = await findAllBeanies();
     const zodiac = await findZodiac();
     beanieZodiac = zodiac;
-    // console.log('string', zodiac);
+
     displayZodiacOptions(beanieZodiac);
 });
 
@@ -23,7 +23,7 @@ searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const formData = new FormData(searchForm);
-    // console.log(formData);
+
     getAllBeanies(formData.get('zodiac'));
 });
 
@@ -33,8 +33,7 @@ async function getAllBeanies(astroSign) {
     const beanies = await findAllBeanies(astroSign);
     //set beanies to state
     beanieBabies = beanies;
-    // const zodiac = await findZodiac();
-    // console.log(zodiac);
+
     //display all beanies
     displayBeanies();
 }
@@ -52,7 +51,6 @@ function displayBeanies() {
     //append
 }
 function displayZodiacOptions(beanieZodiac) {
-    console.log(beanieZodiac);
     for (const zodiac of beanieZodiac) {
         const zodiacOption = renderZodiacOption(zodiac);
         zodiacSelect.append(zodiacOption);

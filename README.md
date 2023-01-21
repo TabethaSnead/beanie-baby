@@ -1,3 +1,5 @@
+![Wireframe of beanie-baby](./assets/wireframe.png)
+
 ## The Golden Rule:
 
 🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
@@ -25,3 +27,29 @@ Additional considerations:
     -   What needs to live in a persistence layer?
 -   Is there some state we need to initialize?
 -   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+
+## HTML
+
+    - dropdown with zodiac signs
+    - section to append beanie information
+
+## state
+
+    -array of zodiac signs from API
+    -array of beanie babies name, img, and info from API
+
+## Events
+
+-on load
+-request zodiac signs
+-appends zodiac signs to dropdown
+-request beanie name and info
+-append beanie name, img, and info to empty section
+-on request - filter through beanie baby supabase
+-display results from filter
+
+## slices
+
+    -see list of all 100 beanies(name, img, info) on page load
+    -should see list of zodiac signs in dropdown
+    -should be able to choose zodiac sign and see the browser update to chosen zodiac
